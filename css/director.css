@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "SF-Mono-Powerline-Bold";
+    src: url("font/SF-Mono-Powerline-Bold.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "SF-Mono-Powerline-Medium";
+    src: url("font/SF-Mono-Powerline-Medium.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "SF-Mono-Powerline-Regular";
+    src: url("font/SF-Mono-Powerline-Regular.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "SF-Pro-Text-Semibold";
+    src: url("font/SF-Pro-Text-Semibold.ttf") format("truetype");
+  }
+
+    
+  @font-face {
+    font-family: "SF-Pro-Display-Regular";
+    src: url("font/SF-Pro-Display-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "SFProDisplay-Medium";
+    src: url("font/SFProDisplay-Medium.ttf") format("truetype");
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "SF-Mono-Powerline-Medium";
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.centered-text {
+    text-align: center;
+    font-size: 15px;
+    font-family: "SF-Mono-Powerline-Medium";
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    font-family: "SFProDisplay-Medium";
+    color: white;
+}
+
+.contact-info, .social-links {
+    font-size: 11px;
+}
+
+.social-links a {
+    color: white;
+    transition: color 0.3s ease;
+    font-size: 11px;
+    font-family: "SF-Mono-Powerline-Regular";
+    margin-left: 10px;
+}
+
+.social-links a:hover {
+    color: gray;
+}
+
+.contact-email {
+    font-family: "SF-Mono-Powerline-Regular";
+    font-size: 11px;
+    color: #fff;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1024px) {
+    .contact-email, .social-links a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .centered-text {
+        font-size: 14px;
+        padding: 0;
+    }
+    
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+    .contact-email {
+        font-size: 12px;
+    }
+    
+    .social-links a {  
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .centered-text {
+        font-size: 14px;
+    }
+    .contact-email {
+        font-size: 11px;
+    }
+    .social-links a {  
+        font-size: 11px;
+    }
+}
+
